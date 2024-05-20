@@ -400,6 +400,44 @@ hr {
 
 }
 
+.map {
+    height: 49.6%;
+    margin: 2rem;
+    border: 2px solid #ccc;
+    
+}
+
+.info-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+.info-entry {
+    margin: 10px 20px;
+    width: calc(50% - 40px);
+}
+.info-title {
+    display: flex;
+    align-items: center;
+    font-size: 1.5rem;
+    color: white;
+    font-weight: 700;
+    line-height: 2;
+    border-bottom: 1px solid #dbdbdb;
+    margin-bottom: 20px;
+    width: 70%;
+}
+.icon {
+    width: 2rem;
+    height: 2rem;
+    margin-right: 10px;
+    background-color: transparent;
+    padding: 0;
+}
+
+.transport {
+    color: white;
+}
+
 @media (max-width: 768px) {
     .container {
         width: 90%;
