@@ -114,13 +114,13 @@ button img {
 
 .deal {
     position: relative;
-    width: 45%;
+    width: 43%;
     height: 17rem;
     color: #fff;
     background: center no-repeat;
     background-size: cover;
     float: left;
-    margin: .5rem 1rem 1.5rem 1.6rem;
+    margin: .5rem 1rem 1.5rem 2.1rem;
 }
 
 .deal-details{ 
@@ -203,6 +203,10 @@ h2 {
     margin-left: 1rem;
 }
 
+.h2-drink {
+    margin-left: 2rem;
+}
+
 .food-items {
     display: flex;
     flex-wrap: wrap;
@@ -254,6 +258,40 @@ h2 {
    
 }
 
+.drink {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 1.1rem;
+    width: 100%;
+    clear: both;
+    padding-bottom: 1.1rem;
+    font-size: 1.3rem;
+    font-weight: 500;
+    line-height: 1em;
+
+}
+
+.drink-items {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    width: 419px;
+    margin-left: 1rem;
+    border-bottom: 2px solid #dbdbdb;
+    border-top: 2px solid #dbdbdb;
+    margin-bottom: 1rem;
+    padding: 10px;
+    background: #000000ad;
+}
+
+.drink-name {
+    flex-grow: 1;
+    color: white;
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
 hr {
    width: 100%;
    color: white;
@@ -271,6 +309,21 @@ hr {
 }
 
 .add-btn:hover {
+    background-color: #8b5212;
+}
+
+.add-btn-drink {
+    background-color: #8b52126c;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 1rem;
+    cursor: pointer;
+    margin-left: 0.5rem;
+    font-size: 12px;
+}
+
+.add-btn-drink:hover {
     background-color: #8b5212;
 }
 
