@@ -1,0 +1,156 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.1/css/all.css" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="modal.css">
+    <title>Boche's Medi</title>
+  </head>
+  <style>
+    
+    </style>
+<body class="background">
+    <div>
+        <nav class="navbar navbar-expand-md bg-dark navbar-dark">
+            <div class="container-fluid d-flex justify-content-between">
+                <a class="navbar-brand" href="index.html">Boche's Medi</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item">
+                    <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                </ul>
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                    <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <div class="container">
+        <div class="burgertop">
+        <div class="header d-flex is-transparent">
+            <div class="header-name">
+            Meniu Restaurant
+            </div>
+            <div class="navmenu ">
+            <div >
+                <a href="menu.html">
+                <button>
+                    <img src="img/menuicon.png" alt="meniu" class="icon">
+                </button>
+                </a>
+            </div>
+            <div>
+                <a href="info.html">
+                <button>
+                    <img src="img/info.png" alt="info" class="icon">
+                </button>
+                </a>
+            </div>
+            <div>
+                <a href="cart.html">
+                <button>
+                    <img src="img/shop.png" alt="cart" class="icon">
+                </button>
+                </a>
+            </div>
+            </div> 
+        </div>
+    </div>
+    <div class="deal-list">
+      <div class="deal" style="background-image: url(https://www.fbgcdn.com/pictures/3d8cee7f-5a0b-430d-80b4-a09ddbd93680.jpg);">
+        <div class="deal-details">
+          <div class="deal-title">
+            Free delivery for orders>100 RON 
+          </div>
+        </div>
+        <div class="deal-condition">
+          <img src="img/expand.svg" alt="expand" class="expand">
+          Vezi conditiile
+          <span>(Promoție aplicată automat)</span>
+        </div>
+    </div>
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+          <div class="modal-header">
+            <span class="close">&times;</span>
+            <p>
+              Free delivery for orders>100 RON
+            </p>
+          </div>
+          <div class="modal-info">
+            <div>
+              <p class="modal-p">
+                Ce obții:
+              </p>
+              <ul>
+                <li>100% reducere la taxa de livrare</li>
+              </ul>
+              <p class="modal-p">
+                Condiții:
+              </p>
+              <ul>
+                <li>Comandă minimă: 100 RON</li>
+                <li>Comandă mai mare sau egală cu 100 RON</li>
+                <li>Timp comandă: 15 minute</li>
+                <li>Tip comandă: Livrare</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+    </div>
+      <div class="deal-list">
+        <div class="deal" style="background-image: url(https://www.fbgcdn.com/pictures/718158c5-95bd-4a84-8737-f7fad0acc76e_d2.jpg);">
+          <div class="deal-details">
+            <div class="deal-title">
+              20% discount on all orders 
+            </div>
+          </div>
+          <div class="deal-condition2">
+            <img src="img/expand.svg" alt="expand" class="expand">
+            Vezi conditiile
+            <span>(Promoție aplicată automat)</span>
+          </div>
+        </div>
+        <div id="myModal2" class="modal">
+          <div class="modal-content">
+            <div class="modal-header">
+              <span class="close">&times;</span>
+              <p>
+                20% discount on all orders 
+              </p>
+            </div>
+            <div class="modal-info">
+              <div>
+                <p class="modal-p">
+                  Ce obții:
+                </p>
+                <ul>
+                  <li>20% reducere la valoarea coșului</li>
+                </ul>
+                <p class="modal-p">
+                  Condiții:
+                </p>
+                <ul>
+                  <li>Prima comandă</li>
+                  <li>Preț total: mai mare sau egal cu 150 RON</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+    </div>
+<script src="script.js"></script>
+</body>
+</html>
