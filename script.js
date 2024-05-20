@@ -6,3 +6,19 @@ document.querySelector('.navbar-toggler').addEventListener('click', function() {
     navbarCollapse.classList.add('show');
   }
 });
+
+
+
+const openNav = () => {
+  document.getElementById("myNav").style.width = "33%";
+};
+
+const closeNav = () => {
+  document.getElementById("myNav").style.width = "0%";
+};
+
+document.getElementById("openNavBtn").addEventListener("click", openNav);
+document.getElementById("closeNavBtn").addEventListener("click", closeNav);
+document.querySelectorAll(".nav-link").forEach(link => {
+  link.addEventListener("click", closeNav);
+});

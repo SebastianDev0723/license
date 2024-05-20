@@ -441,6 +441,71 @@ hr {
     color: white;
 }
 
+/* modal meniu */
+.overlay {
+    height: 33%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 10%;
+    left: 35%;
+    background-color: rgba(252, 252, 252, 0.452);
+    overflow-x: hidden;
+    transition: 0.5s;
+}
+
+.overlay-content {
+    position: relative;
+    top: 10%;
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.overlay-content a {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 36px;
+    color: black;
+    display: block;
+    transition: 0.3s;
+}
+
+.overlay-content a:hover,
+.overlay-content a:focus {
+    color: #eeb518;
+}
+
+.closebtn {
+    position: absolute;
+    top: 0px;
+    right: 40px;
+    font-size: 50px;
+}
+
+.closebtn.m{
+    color: white;
+}
+.closebtn.m:hover {
+    color: #eeb518;
+}
+.openbtn {
+    position: absolute;
+    top: 9%;
+    right: 44%;
+    z-index: 2;
+    font-size: 30px;
+    cursor: pointer;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+}
+
+.openbtn:hover {
+    background-color: #444;
+}
+/* sfarsit modal-meniu */
+
 @media (max-width: 768px) {
     .container {
         width: 90%;

@@ -44,12 +44,23 @@
         </div>
         <div class="navmenu ">
           <div >
-            <a href="menu.html">
-              <button>
+            <a id="openNavBtn" >
+              <button id="openNavBtn">
                 <img src="img/menuicon.png" alt="meniu" class="icon">
               </button>
             </a>
           </div>
+          <div id="myNav" class="overlay">
+            <a href="javascript:void(0)" class="closebtn m" id="closeNavBtn">&times;</a>
+            <div class="overlay-content">
+                <a href="#desert">Desert</a>
+                <a href="#aperitive">Aperitive</a>
+                <a href="#ciorba">Ciorbe și supe cremă</a>
+                <a href="#burger">Burgeri</a>
+                <a href="#pizza">Pizza & Paste</a>
+                <a href="#preparate">Preparate Vegane</a>
+            </div>
+        </div>
           <div>
             <a href="info.html">
               <button>
@@ -151,7 +162,7 @@
         </div>
     </div>
     <hr /> 
-    <div class="food">
+    <div class="food" id="desert">
       <h2>
         Desert
       </h2>
@@ -235,7 +246,7 @@
         </div>
       </div>
     </div>
-    <div class="food">
+    <div class="food" id="aperitive">
       <h2>
           Aperitive
       </h2>
@@ -356,7 +367,7 @@
         </div>
       </div>
     </div>
-    <div class="food">
+    <div class="food" id="ciorba">
       <h2>
         Ciorbe și supe cremă
       </h2>
@@ -458,7 +469,7 @@
         </div>
       </div>
     </div>
-    <div class="food">
+    <div class="food" id="burger">
       <h2>
         Burgeri
       </h2>
@@ -617,7 +628,7 @@
         </div>
       </div>
     </div>
-    <div class="food">
+    <div class="food" id="pizza">
       <h2>
         Pizza & Paste
       </h2>
@@ -719,7 +730,7 @@
           </div>
         </div>
       </div>
-      <div class="food">
+      <div class="food" id="preparate">
         <h2>
           Preparate vegane
         </h2>
@@ -842,12 +853,14 @@
         </div>
       </div>
     </div>
+    
   </div>
 
 <a href="meniu-bauturi.html" class="drink-menu"> 
   <img src="https://assets-global.website-files.com/613725362608bc5cb2cbc325/614ca84dfca8e7185aaa5719_wine-glass.svg" loading="lazy" width="22" alt="" class="mobile-menu-svg is-margin">
   <div class="drink2-menu">Meniu băuturi</div>
 </a>
+
   <script src="modal.js"></script>
   <script src="script.js"></script>
 </body>
