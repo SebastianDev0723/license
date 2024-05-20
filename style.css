@@ -56,10 +56,13 @@ body {
 }
 
 .burgertop { 
+    position: sticky;
+    top: 0;
+    z-index: 1;
     overflow: hidden;
-    /* background-image: url('img/burger.jpg'); */
+    background-image: url('img/burger.jpg'); 
     width: 100%;
-    height: 4.5rem;
+    height: 4.3rem;
     background-size: 100% 19rem;
     background-repeat: no-repeat;
     background-position: center;
@@ -110,6 +113,7 @@ button img {
 }
 
 .deal {
+    position: relative;
     width: 45%;
     height: 17rem;
     color: #fff;
@@ -141,8 +145,8 @@ button img {
 
 .deal-condition { 
     position: absolute;
-    bottom: 53%;
-    left: 26.33%;
+    bottom: 0%;
+    left: 0%;
     padding: 5px;
     background-color: #2e2e3380;
     border-radius: 0 5px 0 0;
@@ -151,16 +155,24 @@ button img {
     transition: background-color .4s ease-out;
 }
 
+.deal-condition:hover {
+    background-color: #2e2e33;
+}
+
 .deal-condition2 {
     position: absolute;
-    bottom: 53%;
-    left: 51%;
+    bottom: 0%;
+    left: 0%;
     padding: 5px;
     background-color: #2e2e3380;
     border-radius: 0 5px 0 0;
     font-size: 10px;
     cursor: pointer;
     transition: background-color .4s ease-out;
+}
+
+.deal-condition2:hover {
+    background-color: #2e2e33;
 }
 
 .expand {
@@ -172,52 +184,105 @@ button img {
     vertical-align: middle
 }
 
-.desert {
+.food {
+    display: flex;
+    flex-wrap: wrap;
     padding: 1.1rem;
     width: 100%;
     clear: both;
     padding-bottom: 1.1rem;
-    text-transform: uppercase;
     font-size: 1.3rem;
-    font-weight: 700;
+    font-weight: 500;
     line-height: 1em;
+    /* column-gap: 5.5rem; */
 }
 
 h2 {
     color: white;
+    text-transform: uppercase;
+    margin-left: 1rem;
 }
 
-.desert-items{
-    width: 375px;
-    margin-left: 20px;
-    border-bottom: 1px solid #dbdbdb;
-    border-top: 1px solid #dbdbdb;
-    margin-top: -1px;
+.food-items {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    width: 419px;
+    margin-left: 1rem;
+    border-bottom: 2px solid #dbdbdb;
+    border-top: 2px solid #dbdbdb;
+    margin-bottom: 1rem;
     padding: 10px;
+    background: #000000ad;
 }
 
-.desert-img{
+/* .food-img{
     background-image: url("https://www.fbgcdn.com/pictures/3df2d38b-84b7-4b35-8a0d-f6e42b271adf_d2.jpg");
     width: 50px;
     height: 50px;
     float: left;
     margin-right: 10px;
     background-size: 60px 50px;
+    border-radius: 1.5rem;
+} */
+
+.food-img-all {
+    width: 55px;
+    height: 52px;
+    float: left;
+    margin-right: 10px;
+    background-size: 60px 55px;
+    border-radius: 2rem
 }
 
-.desert-name {
+.food-name {
+    flex-grow: 1;
     color: white;
     font-size: 14px;
     font-weight: 700;
+    text-transform: uppercase;
 }
 
-.desert-description {
+.food-description {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
     color: white;
     margin-top: 10px;
     font-size: 12px;
+    width: 100%;
+   
 }
 
 hr {
    width: 100%;
    color: white;
+}
+
+.add-btn {
+    background-color: #8b52126c;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin-top: 10px;
+    border-radius: 1rem;
+    cursor: pointer;
+    margin-left: 0.5rem;
+}
+
+.add-btn:hover {
+    background-color: #8b5212;
+}
+
+.price {
+    margin: 0 0.5rem;
+    color: white;
+    
+}
+
+.span-light-text {
+    color: #d40000;
+    font-size: .75rem;
+    font-weight: 700;
+    margin: 0 0.5rem;
 }
