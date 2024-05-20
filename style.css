@@ -411,10 +411,12 @@ hr {
     display: flex;
     flex-wrap: wrap;
 }
+
 .info-entry {
     margin: 10px 20px;
     width: calc(50% - 40px);
 }
+
 .info-title {
     display: flex;
     align-items: center;
@@ -426,6 +428,7 @@ hr {
     margin-bottom: 20px;
     width: 70%;
 }
+
 .icon2 {
     width: 2rem;
     height: 2rem;
