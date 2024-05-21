@@ -220,16 +220,6 @@ h2 {
     background: #000000ad;
 }
 
-/* .food-img{
-    background-image: url("https://www.fbgcdn.com/pictures/3df2d38b-84b7-4b35-8a0d-f6e42b271adf_d2.jpg");
-    width: 50px;
-    height: 50px;
-    float: left;
-    margin-right: 10px;
-    background-size: 60px 50px;
-    border-radius: 1.5rem;
-} */
-
 .food-img-all {
     width: 55px;
     height: 52px;
@@ -512,6 +502,7 @@ hr {
         height: 56rem;
         margin: 1rem auto;
     }
+    
     .deal {
         width: 41%;
     }

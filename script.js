@@ -1,3 +1,4 @@
+// toggler navbar meniu
 document.querySelector('.navbar-toggler').addEventListener('click', function() {
   var navbarCollapse = document.querySelector('.navbar-collapse');
   if (navbarCollapse.classList.contains('show')) {
@@ -8,7 +9,7 @@ document.querySelector('.navbar-toggler').addEventListener('click', function() {
 });
 
 
-
+// navigatie produse meniu
 const openNav = () => {
   document.getElementById("myNav").style.width = "33%";
 };
