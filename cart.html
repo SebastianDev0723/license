@@ -68,110 +68,115 @@
       </div>
     </div>
     <div class="cart-container">
-      <div class="review-list-entry">
-        <div class="rle-header">
-           <img src="img/person.svg" alt="pen"  class="cart-icons">
-            <div class="review-list-entry-title">Contact</div>
+      <div class="">
+          <div class="review-list-entry">
+            <div class="rle-header">
+              <img src="img/person.svg" alt="pen"  class="cart-icons">
+                <div class="review-list-entry-title">Contact</div>
+            </div>
+            <div class="rle-view" id="contact-info">
+              <img src="img/pen.svg" alt="pen" id="edit-profile" class="review-list-entry-icon" onclick="editContact()">
+                <div class="review-list-entry-data" id="contact-data">
+                    <span id="name-display">dada da</span><br>
+                    <span id="email-display">stoyan_seby@yahoo.com</span><br>
+                    <span id="phone-display">+40 734 353 847</span>
+                </div>
+            </div>
+            <div class="rle-view" id="contact-form" style="display: none;">
+                <form onsubmit="saveContact(event)">
+                    <input type="text" id="name-input" placeholder="Name" required><br>
+                    <input type="email" id="email-input" placeholder="Email" required><br>
+                    <input type="tel" id="phone-input" placeholder="Phone" required><br>
+                    <button type="submit">Save</button>
+                </form>
+              </div>
+          </div>
+          <div class="review-list-entry">
+          <div class="rle-header">
+            <img src="img/select.svg" alt="pen" class="cart-icons">
+              <div class="review-list-entry-title">Tip comandă</div>
+          </div>
+          <div class="rle-view" id="order-type-info">
+              <img src="img/pen.svg" class="review-list-entry-icon" id="edit-order-type" onclick="editOrderType()" >
+
+              <div class="review-list-entry-data" id="order-type-data">
+                  <span id="order-type-display">Ridicare</span>
+              </div>
+          </div>
+          <div class="rle-view" id="order-type-form" style="display: none;">
+            <form onsubmit="saveOrderType(event)">
+              <label>
+                  <input type="radio" name="order-type" value="Ridicare" onclick="toggleDeliveryFields()"> Ridicare
+              </label><br>
+              <label>
+                  <input type="radio" name="order-type" value="Livrare" onclick="toggleDeliveryFields()"> Livrare
+              </label><br>
+              <label>
+                  <input type="radio" name="order-type" value="Rezervare masă" onclick="toggleDeliveryFields()"> Rezervare masă
+              </label><br>
+              <label>
+                  <input type="radio" name="order-type" value="Rezervare masă & Precomandă" onclick="toggleDeliveryFields()"> Rezervare masă & Precomandă
+              </label><br>
+              <div id="delivery-fields" style="display: none;">
+                  <input type="text" id="address-input" placeholder="Adresă livrare"><br>
+                  <input type="text" id="city-input" placeholder="Oraș"><br>
+                  <input type="text" id="postal-code-input" placeholder="Cod poștal"><br>
+              </div>
+              <button type="submit">Save</button>
+            </form>
+          </div>
+          <div id="order-type-info">
+            <span id="order-type-display"></span><br>
+            <span id="address-display"></span><br>
+            <span id="city-display"></span><br>
+            <span id="postal-code-display"></span><br>
+          </div>
         </div>
-        <div class="rle-view" id="contact-info">
-          <img src="img/pen.svg" alt="pen" id="edit-profile" class="review-list-entry-icon" onclick="editContact()">
-            <div class="review-list-entry-data" id="contact-data">
-                <span id="name-display">dada da</span><br>
-                <span id="email-display">stoyan_seby@yahoo.com</span><br>
-                <span id="phone-display">+40 734 353 847</span>
+        <div class="review-list-entry">
+        <div class="rle-header">
+          <img src="img/card.svg" alt="money" class="cart-icons">
+            <div class="review-list-entry-title">Metode de plata</div>
+        </div>
+        <div class="rle-view" id="js-contact-info">
+            <img src="img/pen.svg" alt="pen" id="js-edit-profile" class="review-list-entry-icon">
+            <div class="review-list-entry-data" id="js-contact-data">
+
             </div>
         </div>
-        <div class="rle-view" id="contact-form" style="display: none;">
-            <form onsubmit="saveContact(event)">
-                <input type="text" id="name-input" placeholder="Name" required><br>
-                <input type="email" id="email-input" placeholder="Email" required><br>
-                <input type="tel" id="phone-input" placeholder="Phone" required><br>
+        <div class="rle-view" id="js-contact-form" style="display: none;">
+            <form onsubmit="saveContact1(event)">
+                <label><input type="radio" name="order-type" value="Ridicare"> Ridicare</label><br>
+                <label><input type="radio" name="order-type" value="Numerar la ridicare comandă"> Numerar la ridicare comandă</label><br>
+                <label><input type="radio" name="order-type" value="Card bancar la ridicare comandă"> Card bancar la ridicare comandă</label><br>
                 <button type="submit">Save</button>
             </form>
         </div>
-    </div>
-    <div class="review-list-entry">
-      <div class="rle-header">
-         <img src="img/select.svg" alt="pen" class="cart-icons">
-          <div class="review-list-entry-title">Tip comandă</div>
-      </div>
-      <div class="rle-view" id="order-type-info">
-          <img src="img/pen.svg" class="review-list-entry-icon" id="edit-order-type" onclick="editOrderType()" >
-
-          <div class="review-list-entry-data" id="order-type-data">
-              <span id="order-type-display">Ridicare</span>
-          </div>
-      </div>
-      <div class="rle-view" id="order-type-form" style="display: none;">
-        <form onsubmit="saveOrderType(event)">
-          <label>
-              <input type="radio" name="order-type" value="Ridicare" onclick="toggleDeliveryFields()"> Ridicare
-          </label><br>
-          <label>
-              <input type="radio" name="order-type" value="Livrare" onclick="toggleDeliveryFields()"> Livrare
-          </label><br>
-          <label>
-              <input type="radio" name="order-type" value="Rezervare masă" onclick="toggleDeliveryFields()"> Rezervare masă
-          </label><br>
-          <label>
-              <input type="radio" name="order-type" value="Rezervare masă & Precomandă" onclick="toggleDeliveryFields()"> Rezervare masă & Precomandă
-          </label><br>
-          <div id="delivery-fields" style="display: none;">
-              <input type="text" id="address-input" placeholder="Adresă livrare"><br>
-              <input type="text" id="city-input" placeholder="Oraș"><br>
-              <input type="text" id="postal-code-input" placeholder="Cod poștal"><br>
-          </div>
-          <button type="submit">Save</button>
-        </form>
-    </div>
-    <div id="order-type-info">
-      <span id="order-type-display"></span><br>
-      <span id="address-display"></span><br>
-      <span id="city-display"></span><br>
-      <span id="postal-code-display"></span><br>
-    </div>
-  </div>
-  <div class="review-list-entry">
-    <div class="rle-header">
-      <img src="img/card.svg" alt="money" class="cart-icons">
-        <div class="review-list-entry-title">Metode de plata</div>
-    </div>
-    <div class="rle-view" id="js-contact-info">
-        <img src="img/pen.svg" alt="pen" id="js-edit-profile" class="review-list-entry-icon">
-        <div class="review-list-entry-data" id="js-contact-data">
-
         </div>
-    </div>
-    <div class="rle-view" id="js-contact-form" style="display: none;">
-        <form onsubmit="saveContact1(event)">
-            <label><input type="radio" name="order-type" value="Ridicare"> Ridicare</label><br>
-            <label><input type="radio" name="order-type" value="Numerar la ridicare comandă"> Numerar la ridicare comandă</label><br>
-            <label><input type="radio" name="order-type" value="Card bancar la ridicare comandă"> Card bancar la ridicare comandă</label><br>
-            <button type="submit">Save</button>
-        </form>
-    </div>
-</div>
-    <div class="review-list-entry">
-      <div class="rle-header">
-        <img src="img/clock.svg" alt="delivery" class="cart-icons">
-          <div class="review-list-entry-title">Alege ora</div>
+        <div class="review-list-entry">
+          <div class="rle-header">
+            <img src="img/clock.svg" alt="delivery" class="cart-icons">
+              <div class="review-list-entry-title">Alege ora</div>
+          </div>
+          <div class="rle-view" id="contact-info">
+            <img src="img/pen.svg" alt="pen" id="edit-profile" class="review-list-entry-icon" onclick="editContact()">
+          </div>
+          <div class="datetime-selection">
+            <label for="selected-date" >Select a date:</label>
+            <select id="selected-date" class="selected-date">
+              <!-- Optiunile pentru selectarea zilei vor fi generate de JavaScript -->
+            </select>
+          
+            <label for="selected-time" >Select a time:</label>
+            <select id="selected-time" class="selected-time">
+              <!-- Optiunile pentru selectarea orei vor fi generate de JavaScript -->
+            </select>
+          </div>
+        </div>
       </div>
-      <div class="rle-view" id="contact-info">
-        <img src="img/pen.svg" alt="pen" id="edit-profile" class="review-list-entry-icon" onclick="editContact()">
-      </div>
-      <div class="datetime-selection">
-        <label for="selected-date" >Select a date:</label>
-        <select id="selected-date" class="selected-date">
-          <!-- Optiunile pentru selectarea zilei vor fi generate de JavaScript -->
-        </select>
-      
-        <label for="selected-time" >Select a time:</label>
-        <select id="selected-time" class="selected-time">
-          <!-- Optiunile pentru selectarea orei vor fi generate de JavaScript -->
-        </select>
+      <div class="cos">
+        dadadadadad
       </div>
     </div>
-  </div>
 </div>
 <script src="date.js"></script>
 <script src="contact.js"></script>
