@@ -69,6 +69,11 @@ body {
     border-radius: 1.5rem 1.5rem 0 0;
 }
 
+.cart-container {
+    display: flex;
+        
+}
+
 .header {
     background-color: #8b5312a4;
     width: auto;
