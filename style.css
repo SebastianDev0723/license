@@ -71,7 +71,7 @@ body {
 
 .cart-container {
     display: flex;
-        
+    gap: rem; 
 }
 
 .header {

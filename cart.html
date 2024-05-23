@@ -68,7 +68,7 @@
       </div>
     </div>
     <div class="cart-container">
-      <div class="">
+      <div style="width: 345px;">
           <div class="review-list-entry">
             <div class="rle-header">
               <img src="img/person.svg" alt="pen"  class="cart-icons">
@@ -145,10 +145,10 @@
         </div>
         <div class="rle-view" id="js-contact-form" style="display: none;">
             <form onsubmit="saveContact1(event)">
-                <label><input type="radio" name="order-type" value="Numerar in restaurant"> Numerar in restaurant</label><br>
-                <label><input type="radio" name="order-type" value="Card bancar in restaurant"> Card bancar in restaurant</label><br>
-                <label><input type="radio" name="order-type" value="Numerar la ridicare comandă"> Numerar la ridicare comandă</label><br>
-                <label><input type="radio" name="order-type" value="Card bancar la ridicare comandă"> Card bancar la ridicare comandă</label><br>
+                <label><input type="radio" name="order-type1" value="Numerar in restaurant"> Numerar in restaurant</label><br>
+                <label><input type="radio" name="order-type1" value="Card bancar in restaurant"> Card bancar in restaurant</label><br>
+                <label><input type="radio" name="order-type1" value="Numerar la ridicare comandă"> Numerar la ridicare comandă</label><br>
+                <label><input type="radio" name="order-type1" value="Card bancar la ridicare comandă"> Card bancar la ridicare comandă</label><br>
                 <button type="submit">Save</button>
             </form>
         </div>
@@ -176,11 +176,15 @@
       </div>
       <div class="cos-container">
         <div class="cos-header">
-          <div class="cos-header-quantity">Cnt</div>
-          <div class="cos-header-name">Produs</div>
-          <div class="cos-header-price">Preț</div>
+            <div class="cos-header-quantity">Cnt</div>
+            <div class="cos-header-name">Produs</div>
+            <div class="cos-header-price">Preț</div>
         </div>
-      </div>
+        <hr>
+        <div class="cos-items">
+            <!-- Produsele vor fi adăugate aici din JavaScript -->
+        </div>
+    </div>
     </div>
 </div>
 <script src="date.js"></script>

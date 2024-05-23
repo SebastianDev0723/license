@@ -12,7 +12,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
     window.saveContact1 = function(event) {
         event.preventDefault();
 
-        const selectedOption = document.querySelector('input[name="order-type"]:checked');
+        const selectedOption = document.querySelector('input[name="order-type1"]:checked');
         if (selectedOption) {
             const selectedValue = selectedOption.value;
 
