@@ -171,14 +171,18 @@
             <select id="selected-time" class="selected-time">
               <!-- Optiunile pentru selectarea orei vor fi generate de JavaScript -->
             </select>
+            <label for="number-of-people">Numarul de persoane:</label>
+              <select id="number-of-people" class="number-of-people">
+                  <option value="2">2</option>
+                  <option value="4">4</option>
+                  <option value="6">6</option>
+                  <option value="8">8</option>
+              </select>
           </div>
         </div>
       </div>
       <div class="cos-container">
         <div class="cos-header">
-          <!-- <div class="cos-header-quantity">Cnt</div>
-          <div class="cos-header-name">Produs</div>
-          <div class="cos-header-price">Preț</div> -->
           <div class="the-cart-name">
             <img src="img/bag.svg" alt="cart" class="cart-icons">
             Cosul tau
@@ -189,6 +193,7 @@
             </ul>
             <p id="cartTotal" class="cart-total">Total: 0 lei</p>
             <button id="clearCartBtn" class="clear-cart">Golește coșul</button>
+            <button id="submitOrderBtn" class="submit-order">Trimite comanda</button>
           </div>
         </div>
       </div>

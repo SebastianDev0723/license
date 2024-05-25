@@ -228,6 +228,23 @@ function setupAddToCartButtons() {
     });
 }
 
+function setupSubmitOrderButton() {
+    var submitOrderBtn = document.getElementById("submitOrderBtn");
+    if (submitOrderBtn) {
+        submitOrderBtn.addEventListener("click", function() {
+            var cart = JSON.parse(localStorage.getItem("cart")) || [];
+            if (cart.length > 0) {
+                localStorage.setItem("order", JSON.stringify(cart));
+                alert("Comanda a fost trimisă!");
+                localStorage.removeItem("cart");
+                displayCart();
+            } else {
+                alert("Coșul este gol. Adăugați produse înainte de a trimite comanda.");
+            }
+        });
+    }
+}
+
 // Așteaptă ca întregul document să fie încărcat
 document.addEventListener("DOMContentLoaded", function() {
     // Verifică dacă suntem pe pagina de meniu și configurează butoanele de adăugare
@@ -238,5 +255,6 @@ document.addEventListener("DOMContentLoaded", function() {
     if (document.getElementById("cartItems")) {
         displayCart();
         setupClearCartButton();
+        setupSubmitOrderButton();
     }
 });
