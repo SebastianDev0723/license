@@ -170,7 +170,20 @@ function displayCart() {
             div.appendChild(removeButton);
             cartItemsElement.appendChild(div);
         });
+        // Afișează totalul coșului
+        var totalElement = document.getElementById("cartTotal");
+        if (totalElement) {
+            totalElement.textContent = "Total: " + calculateTotal() + " lei";
+        }
     }
+}
+
+function calculateTotal() {
+    var cart = JSON.parse(localStorage.getItem("cart")) || [];
+    var total = cart.reduce(function(sum, product) {
+        return sum + product.price;
+    }, 0);
+    return total;
 }
 
 // Funcție pentru a șterge un produs din coș
