@@ -67,12 +67,14 @@ button {
 .cos-container {
     display: flex;
     flex-wrap: wrap;
+    flex: 1;
     width: 345px;
     padding: 0;
     
 }
 
 .cos-header {
+    position: relative;
     width: 100%;
     display: table;
     table-layout: fixed;
@@ -98,4 +100,25 @@ button {
 .cos-header-price {
     display: table-cell;
     width: 0.8rem;
+}
+
+.clear-cart {
+    background-color: #ffffff9c;
+    border: none;
+    padding: 8px 10px;
+    border-radius: 1rem;
+    cursor: pointer;
+    position: absolute;
+    top: 90%;
+    left: 3%;
+}
+
+.clear-cart:hover {
+    background-color: #ffffff;
+}
+
+.the-cart-name {
+    display: flex;
+    font-size: 16px;
+    align-items: center;
 }

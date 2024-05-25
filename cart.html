@@ -176,20 +176,28 @@
       </div>
       <div class="cos-container">
         <div class="cos-header">
-            <div class="cos-header-quantity">Cnt</div>
-            <div class="cos-header-name">Produs</div>
-            <div class="cos-header-price">Preț</div>
+          <!-- <div class="cos-header-quantity">Cnt</div>
+          <div class="cos-header-name">Produs</div>
+          <div class="cos-header-price">Preț</div> -->
+          <div class="the-cart-name">
+            <img src="img/bag.svg" alt="cart" class="cart-icons">
+            Cosul tau
+          </div>
+          <div class="cart">
+            <ul id="cartItems">
+                <!-- Aici vor fi afișate produsele din coș -->
+            </ul>
+            <button id="clearCartBtn" class="clear-cart">Golește coșul</button>
+          </div>
         </div>
-        <hr>
-        <div class="cos-items">
-            <!-- Produsele vor fi adăugate aici din JavaScript -->
-        </div>
+      </div>
     </div>
-    </div>
-</div>
+  </div>
+
+<script src="add-cart.js"></script>
 <script src="date.js"></script>
 <script src="contact.js"></script>
 <script src="script.js"></script>
-<script src="cart.js"></script>
+<script src="cart-info.js"></script>
 </body>
 </html>

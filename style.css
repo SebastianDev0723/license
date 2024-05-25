@@ -208,6 +208,18 @@ h2 {
     margin-left: 1rem;
 }
 
+p{
+    margin: 0;
+}
+
+.h2-food-name{
+    flex-grow: 1;
+    color: white;
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
 .h2-drink {
     margin-left: 2rem;
 }
@@ -301,6 +313,7 @@ hr {
     border-radius: 1rem;
     cursor: pointer;
     margin-left: 0.5rem;
+    font-size: 12px;
 }
 
 .add-btn:hover {
@@ -327,7 +340,11 @@ hr {
     color: white;
     
 }
-
+.price1 {
+    color:#fff;
+    display: flex;
+    flex: 1;
+}
 .span-light-text {
     color: #d40000;
     font-size: .75rem;
