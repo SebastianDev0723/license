@@ -39,14 +39,49 @@ var productPrices = {
     "33": 20.9, //HUMUS
     "34": 26.9, //MANCARE DE ARDEI
 
+    "35": 5, //APA & BĂUTURI RACORITOARE* apa plata
+    "36": 5, //apa minerala 500ml
+    "37": 7.5, //apa minerala 750ml
+    "38": 6, //pepsi
+    "39": 6, //mirinda
+    "40": 6, //7up
+    "41": 6, //mountain dew
+    "42": 6, //evervess
+    "43": 7, //granini
+    "44": 7, //prigat
+
+    "45": 15, //smoothie-uri* mere si morcov
+    "46": 15, //grapfruit,mar si portocale
+    "47": 15, //portocala si mar
+    "48": 15, //portocala si morcov
+    "49": 12, //CAFEA / CIOCOLATA / FRAPPE* espresso lung
+    "50": 12, //espresso
+    "51": 13, //espresso decaffe
+    "52": 14, //espresso macchiato
+    "53": 17, //cappucino decaffe
+    "54": 16, //caffe latte 
+    "55": 24, //caramel frappe
+    "56": 27, //bailey's frappe
+    "57": 18, //flavored hot chocolate
+
 
 };
 
 // Funcție pentru a actualiza prețul produsului și a actualiza afișajul
 function updatePrice(productId, newPrice) {
-    productPrices[productId] = newPrice;
-    document.getElementById("price" + productId).textContent = newPrice;
-}
+        // Actualizează prețul în obiectul productPrices
+        productPrices[productId] = newPrice;
+
+        // Obține elementul după ID
+        var priceElement = document.getElementById("price" + productId);
+
+        // Verifică dacă elementul există înainte de a seta textContent-ul
+        if (priceElement) {
+            priceElement.textContent = newPrice;
+        } else {
+            console.error("Elementul cu ID-ul 'price" + productId + "' nu a fost găsit.");
+        }
+    }
 
 // Exemplu de actualizare a prețului pentru Produsul 1
 updatePrice("1", 33);
@@ -83,6 +118,29 @@ updatePrice("31", 25.9);
 updatePrice("32", 31);
 updatePrice("33", 20.9);
 updatePrice("34", 26.9);
+updatePrice("35", 5);
+updatePrice("36", 5);
+updatePrice("37", 7.5);
+updatePrice("38", 6);
+updatePrice("39", 6);
+updatePrice("40", 6);
+updatePrice("41", 6);
+updatePrice("42", 6);
+updatePrice("43", 7);
+updatePrice("44", 7);
+updatePrice("45", 15);
+updatePrice("46", 15);
+updatePrice("47", 15);
+updatePrice("48", 15);
+updatePrice("49", 12);
+updatePrice("50", 12);
+updatePrice("51", 13);
+updatePrice("52", 14);
+updatePrice("53", 17);
+updatePrice("54", 16);
+updatePrice("55", 24);
+updatePrice("56", 27);
+updatePrice("57", 18);
 
 
 // Funcție pentru a adăuga un produs în coș
