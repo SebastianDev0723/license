@@ -117,6 +117,26 @@ button {
     background-color: #ffffff;
 }
 
+.submit-order {
+    background-color: #ffffff9c;
+    border: none;
+    padding: 8px 10px;
+    border-radius: 1rem;
+    cursor: pointer;
+    position: absolute;
+    top: 90%;
+    right: 3%;
+}
+
+.submit-order:hover {
+    background-color: #ffffff;
+}
+
+.information-btn {
+    background-color: #fff;
+    border-radius: 0.4rem;
+}
+
 .the-cart-name {
     display: flex;
     font-size: 16px;
