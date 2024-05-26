@@ -142,3 +142,10 @@ button {
     font-size: 16px;
     align-items: center;
 }
+
+.remove-img {
+    cursor: pointer;
+    width: 25px;
+    height: 25px;
+    margin-right: 10px;
+}

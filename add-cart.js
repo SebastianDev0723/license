@@ -160,16 +160,24 @@ function displayCart() {
             var div = document.createElement("div");
             div.className = "cart-item";
             div.textContent = product.name + " - " + product.price + " lei";
-            var removeButton = document.createElement("button");
-            removeButton.className = "remove-btn";
-            removeButton.textContent = "Elimină";
-            removeButton.addEventListener("click", function() {
+            
+            // Crează elementul img pentru eliminare
+            var removeImg = document.createElement("img");
+            removeImg.className = "remove-img";
+            removeImg.src = "img/remove.svg"; // Înlocuiește cu calea către SVG-ul tău
+            removeImg.alt = "Elimină";
+            removeImg.style.cursor = "pointer"; // Adaugă cursor pointer pentru a arăta că este clicabil
+            
+            // Adaugă event listener pentru a elimina produsul din coș
+            removeImg.addEventListener("click", function() {
                 removeFromCart(index);
                 displayCart();
             });
-            div.appendChild(removeButton);
+            
+            div.appendChild(removeImg);
             cartItemsElement.appendChild(div);
         });
+        
         // Afișează totalul coșului
         var totalElement = document.getElementById("cartTotal");
         if (totalElement) {

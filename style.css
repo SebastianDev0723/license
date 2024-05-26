@@ -353,6 +353,7 @@ hr {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    align-items: center;
     padding: 0.7rem;
     width: 100%;
     clear: both;
@@ -558,7 +559,69 @@ hr {
 .selected-time {
     width: 100%;
 }
-@media (max-width: 768px) {
+
+@media (max-width: 321px) {
+    .background {
+        background-position-x: -4rem;
+    }
+
+    .blue-container {
+        padding: 5px;
+        max-width: 18rem;
+    }
+
+    .col {
+        font-size: 12px;
+        margin-bottom: 10px;
+    }
+
+    .btn {
+        font-size: 12px;
+    }
+
+    .btn.btn-warning {
+        padding: 0.175rem .25rem;
+    }
+    .svgd {
+        width: 3.5rem;
+        height: 3.5rem;
+        left: 8%
+    }
+    .svgarrow {
+        width: 3.5rem;
+        height: 3rem;
+        left: 76%;
+    }
+}
+
+@media (max-width: 575.9px) {
+    .background {
+        background-position-y: 3rem;
+        background-position-x: -5rem;
+        background-size: 120% 106vh;
+    }
+    .blue-container {
+        max-width: 25rem;
+        padding: 15px;
+    }
+    .svgd{
+        width: 4rem;
+        height: 4rem;
+        top: 26.9rem;
+        left: 17%;
+    }
+    .svgarrow {
+        width: 4.5rem;
+        height: 4rem;
+        top: 27rem;
+        left: 70%;
+    }
+    .col{
+        margin-bottom: 10px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991.9px) {
     .container {
         width: 90%;
         height: 56rem;
@@ -567,5 +630,11 @@ hr {
     
     .deal {
         width: 41%;
+    }
+    .svgd{
+        width: 5rem;
+        height: 5rem;
+        top: 26.2rem;
+        left: 16%;
     }
 }
