@@ -213,6 +213,8 @@ function setupClearCartButton() {
 // Funcție pentru a inițializa evenimentele în `menu.html`
 function setupAddToCartButtons() {
     var addToCartButtons = document.querySelectorAll(".add-btn");
+    var addToCartDrinkButtons = document.querySelectorAll(".add-btn-drink");
+
     addToCartButtons.forEach(function(button) {
         button.addEventListener("click", function() {
             var productElement = button.closest('.food-items');
@@ -226,7 +228,23 @@ function setupAddToCartButtons() {
             alert("Produsul a fost adăugat în coș!");
         });
     });
+
+    addToCartDrinkButtons.forEach(function(button) {
+        button.addEventListener("click", function() {
+            var productElement = button.closest('.drink-items');
+            var productName = productElement.querySelector('.drink').textContent;
+            var productPrice = productElement.querySelector('.price span').textContent;
+            var product = {
+                name: productName,
+                price: parseFloat(productPrice)
+            };
+            addToCart(product);
+            alert("Produsul a fost adăugat în coș!");
+        });
+    });
 }
+
+
 
 function setupSubmitOrderButton() {
     var submitOrderBtn = document.getElementById("submitOrderBtn");
@@ -248,7 +266,7 @@ function setupSubmitOrderButton() {
 // Așteaptă ca întregul document să fie încărcat
 document.addEventListener("DOMContentLoaded", function() {
     // Verifică dacă suntem pe pagina de meniu și configurează butoanele de adăugare
-    if (document.querySelectorAll(".add-btn").length > 0) {
+    if (document.querySelectorAll(".add-btn").length > 0 || document.querySelectorAll(".add-btn-drink").length > 0) {
         setupAddToCartButtons();
     }
     // Verifică dacă suntem pe pagina de coș și afișează coșul și configurează butonul de golire
