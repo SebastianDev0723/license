@@ -232,7 +232,7 @@ function setupAddToCartButtons() {
     addToCartDrinkButtons.forEach(function(button) {
         button.addEventListener("click", function() {
             var productElement = button.closest('.drink-items');
-            var productName = productElement.querySelector('.drink').textContent;
+            var productName = productElement.querySelector('.drink-name').textContent;
             var productPrice = productElement.querySelector('.price span').textContent;
             var product = {
                 name: productName,
@@ -243,8 +243,6 @@ function setupAddToCartButtons() {
         });
     });
 }
-
-
 
 function setupSubmitOrderButton() {
     var submitOrderBtn = document.getElementById("submitOrderBtn");
