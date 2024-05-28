@@ -65,7 +65,7 @@ body {
     top: 0;
     z-index: 1;
     overflow: hidden;
-    background-image: url('img/burger.jpg'); 
+    /* background-image: url('img/burger.jpg');  */
     width: 100%;
     height: 4.3rem;
     background-size: 100% 19rem;
@@ -597,8 +597,51 @@ hr {
         height: 3rem;
         right: 8%;
     }
+    .container {
+        width: 90%;
+    }
+    .header-name{
+        font-size: 12px;
+        padding:0;
+        padding-left: 5px;
+    }
+    .icon {
+        width: 2.4rem;
+        height: 2.4rem;
+        margin: 10px;
+    }
+    .deal {
+        width: 45%;
+        height: 10rem;
+        margin: 0.4rem;
+    }
+    .deal-title{
+        font-size: 14px
+    }
+    .deal-condition{
+        font-size: 8px;
+    }
+    .deal-condition2{
+        font-size: 8px;
+    }
+    
 }   
-
+@media (min-width: 345px) and (max-width: 575.9px){
+    .header-name{
+        font-size: 16px;
+    }
+    .deal {
+        margin: 0.4.8rem;
+    }
+}
+@media (min-width: 450px) and (max-width:575.9px){
+    .deal {
+        margin: 0.55rem;
+    }
+    .container {
+        width: 80%;
+    }
+}
 
 @media (max-width: 575.9px) {
     .background {
@@ -650,6 +693,21 @@ hr {
     .btn.btn-warning {
         padding: 0.175rem .25rem;
     }
+    .container {
+        width: 77%;
+    }
+    .deal {
+        width: 42%;
+        height: 14rem;
+        margin: 1.1rem;
+    }
+    .header-name{
+        font-size: 18px;
+
+    }
+    .deal-title {
+        font-size: 18px;
+    }
 }
 
 @media (min-width: 768px) and (max-width: 991.9px) {
@@ -677,6 +735,22 @@ hr {
     .btn.btn-warning {
         padding: 0.175rem .25rem;
     }
+    .container {
+        width: 75%;
+    }
+    .deal{
+        width: 45%;
+        margin: 0.9rem
+    }
+}
+@media (min-width:300px) and (max-width:1170px) {
+    .food-items {
+        width: 100%;
+        margin: 0.4rem;
+    }
+    .header-name{
+        font-size: 20px;
+    }
 }
 @media (min-width: 992px) and (max-width: 1199.9px) {
     .background {
@@ -702,5 +776,11 @@ hr {
     }
     .btn.btn-warning {
         padding: 0.175rem .25rem;
+    }
+    .container {
+        width: 70%;
+    }
+    .deal {
+        margin: 0.9rem 1.5rem 0.9rem 1.5rem;
     }
 }
