@@ -38,11 +38,11 @@ function saveOrderType(event) {
     if (selectedOrderType === "Livrare") {
         document.getElementById('address-display').innerText = document.getElementById('address-input').value;
         document.getElementById('city-display').innerText = document.getElementById('city-input').value;
-        document.getElementById('postal-code-display').innerText = document.getElementById('postal-code-input').value;
+        document.getElementById('number-phone-display').innerText = document.getElementById('number-phone-input').value;
     } else {
         document.getElementById('address-display').innerText = '';
         document.getElementById('city-display').innerText = '';
-        document.getElementById('postal-code-display').innerText = '';
+        document.getElementById('number-phone-display').innerText = '';
     }
 
     document.getElementById('order-type-info').style.display = 'block';

@@ -13,6 +13,7 @@ body {
 }
 
 .blue-container {
+    position: relative;
     background-color: #51515130; 
     color: white; 
     padding: 20px; 
@@ -27,11 +28,11 @@ body {
 }
 
 .svgarrow {
-    width: 5.5rem;
-    height: 5.5rem;
+    width: 5rem;
+    height: 5rem;
     position: absolute;
-    top: 26.5rem;
-    left: 57%;
+    top: 15%;
+    right: 15%;
     transform: rotate(155deg);
 }
 
@@ -39,10 +40,14 @@ body {
     width: 5.5rem;
     height: 5.5rem;
     position: absolute;
-    top: 26.5rem;
-    left: 35%;
+    top: 10%;
+    left: 10%;
     transform: rotate(350deg);
 
+}
+
+.col {
+    margin-bottom: 10px;
 }
 
 .container {
@@ -192,7 +197,8 @@ button img {
 .food {
     display: flex;
     flex-wrap: wrap;
-    padding: 1.1rem;
+    justify-content: space-around;
+    /* padding: 1.1rem; */
     width: 100%;
     clear: both;
     padding-bottom: 1.1rem;
@@ -228,8 +234,8 @@ p{
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    width: 419px;
-    margin-left: 1rem;
+    width: 410px;
+    /* margin-left: 1rem; */
     border-bottom: 2px solid #dbdbdb;
     border-top: 2px solid #dbdbdb;
     margin-bottom: 1rem;
@@ -572,7 +578,6 @@ hr {
 
     .col {
         font-size: 12px;
-        margin-bottom: 10px;
     }
 
     .btn {
@@ -590,35 +595,33 @@ hr {
     .svgarrow {
         width: 3.5rem;
         height: 3rem;
-        left: 76%;
+        right: 8%;
     }
 }
 
 @media (max-width: 575.9px) {
     .background {
         background-position-y: 3rem;
-        background-position-x: -5rem;
+        background-position-x: -3rem;
         background-size: 120% 106vh;
     }
     .blue-container {
-        max-width: 25rem;
-        padding: 15px;
+        max-width: 30rem;
+        padding: 5px;
     }
     .svgd{
         width: 4rem;
         height: 4rem;
-        top: 26.9rem;
-        left: 17%;
+        top: 10%;
+        left: 5%;
     }
     .svgarrow {
         width: 4.5rem;
         height: 4rem;
-        top: 27rem;
-        left: 70%;
+        top: 10%;
+        right:5%;
     }
-    .col{
-        margin-bottom: 10px;
-    }
+   
 }
 
 @media (min-width: 768px) and (max-width: 991.9px) {
@@ -631,10 +634,6 @@ hr {
     .deal {
         width: 41%;
     }
-    .svgd{
-        width: 5rem;
-        height: 5rem;
-        top: 26.2rem;
-        left: 16%;
-    }
+   
+    
 }
