@@ -494,7 +494,7 @@ hr {
     position: fixed;
     z-index: 1;
     top: 10%;
-    left: 35%;
+    left: 25%;
     background-color: rgba(252, 252, 252, 0.452);
     overflow-x: hidden;
     transition: 0.5s;
