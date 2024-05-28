@@ -624,6 +624,17 @@ hr {
     .deal-condition2{
         font-size: 8px;
     }
+    .info-container {
+        flex-direction: column;
+        
+    }
+    .info-title {
+        flex-direction: column;
+        width: 90%;
+    }
+    .info-entry {
+        width: 90%;
+    }
     
 }   
 @media (min-width: 345px) and (max-width: 575.9px){
@@ -708,6 +719,9 @@ hr {
     .deal-title {
         font-size: 18px;
     }
+    .info-entry {
+        width: 100%;
+    }
 }
 
 @media (min-width: 768px) and (max-width: 991.9px) {
@@ -742,15 +756,22 @@ hr {
         width: 45%;
         margin: 0.9rem
     }
+    .info-entry {
+        width: 100%;
+    }
+    .icon {
+        width: 3rem;
+        height: 3rem;
+    }
 }
 @media (min-width:300px) and (max-width:1170px) {
     .food-items {
         width: 100%;
         margin: 0.4rem;
     }
-    .header-name{
+    /* .header-name{
         font-size: 20px;
-    }
+    } */
 }
 @media (min-width: 992px) and (max-width: 1199.9px) {
     .background {
@@ -782,6 +803,10 @@ hr {
     }
     .deal {
         margin: 0.9rem 1.5rem 0.9rem 1.5rem;
+    }
+    .icon {
+        width: 3rem;
+        height: 3rem;
     }
 }
 @media (min-width: 1200px) and (max-width: 1399.9px) {
@@ -818,6 +843,10 @@ hr {
     .header-name {
         font-size: 22px;
     }
+    .icon {
+        width: 3rem;
+        height: 3rem;
+    }
 }
 @media (min-width:1400px) {
     .container {
@@ -827,8 +856,15 @@ hr {
         width: 48%;
     }
     .deal { 
-        width: 45%;
-        height: 15rem;
-        margin: 1.2rem 1.6rem 1.2rem 1.6rem;
+        width: 44%;
+        height: 17rem;
+        margin: 1.2rem 2.1rem 1.2rem 2.1rem;
+    }
+    .background { 
+        background-size: 100% 116ch;
+    }
+    .icon {
+        width: 3rem;
+        height: 3rem;
     }
 }
