@@ -74,6 +74,10 @@ button {
     
 }
 
+.cos-width{
+    width: 345px;
+}
+
 .cos-header {
     position: relative;
     width: 100%;
@@ -149,4 +153,62 @@ button {
     width: 25px;
     height: 25px;
     margin-right: 10px;
+}
+
+@media (min-width: 300px) and (max-width: 575.9px) {
+    .cos-width {
+        width: 100%;
+    }
+    .cos-container {
+        width: 100%;
+    }
+    .cart {
+        display: flex;
+        flex-direction: column;
+    }
+    .clear-cart {
+        position:unset;
+        width: 50%;
+        margin:0.5rem 0 0.5rem 0;
+    }
+    .submit-order {
+        position:unset;
+        width: 60%;
+    }
+}
+@media (min-width: 576px) and (max-width: 767.9px) { 
+    .cos-width {
+        width: 100%;
+    }
+    .cos-container {
+        width: 100%;
+        flex-direction: column;
+    }
+    .cart-container {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+    .cart {
+        display: flex;
+        flex-direction: column;
+    }
+    .clear-cart {
+        position:unset;
+        width: 50%;
+        margin:0.5rem 0 0.5rem 0;
+    }
+    .submit-order {
+        position:unset;
+        width: 60%;
+    }
+}
+@media (min-width: 768px) and (max-width: 991.9px) {
+    .clear-cart {
+        top: 82%;
+        left: 3%;
+    }
+    .submit-order {
+        left: 3%;
+        
+    }
 }

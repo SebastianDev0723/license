@@ -566,6 +566,7 @@ hr {
     width: 100%;
 }
 
+
 @media (min-width: 300px) and (max-width: 575.9px) {
     .background {
         background-position-x: -4rem;
@@ -635,6 +636,11 @@ hr {
     .info-entry {
         width: 90%;
     }
+    .cart-container {
+        flex-direction: column;
+        gap: 0.5rem;
+    
+    }
     
 }   
 @media (min-width: 345px) and (max-width: 575.9px){
@@ -658,7 +664,7 @@ hr {
     .background {
         background-position-y: 3rem;
         background-position-x: -3rem;
-        background-size: 120% 106vh;
+        background-size: 120% 111vh;
     }
     .blue-container {
         max-width: 25rem;
@@ -683,7 +689,7 @@ hr {
     .background {
         background-position-y: 3rem;
         background-position-x: -3rem;
-        background-size: 120% 106vh;
+        background-size: 120% 111vh;
     }
     .blue-container {
         max-width: 30rem;
@@ -722,6 +728,7 @@ hr {
     .info-entry {
         width: 100%;
     }
+    
 }
 
 @media (min-width: 768px) and (max-width: 991.9px) {
