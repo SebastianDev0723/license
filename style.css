@@ -566,7 +566,7 @@ hr {
     width: 100%;
 }
 
-@media (max-width: 321px) {
+@media (min-width: 300px) and (max-width: 575.9px) {
     .background {
         background-position-x: -4rem;
     }
@@ -597,9 +597,35 @@ hr {
         height: 3rem;
         right: 8%;
     }
-}
+}   
+
 
 @media (max-width: 575.9px) {
+    .background {
+        background-position-y: 3rem;
+        background-position-x: -3rem;
+        background-size: 120% 106vh;
+    }
+    .blue-container {
+        max-width: 25rem;
+        padding: 5px;
+    }
+    .svgd{
+        width: 3.5rem;
+        height: 4rem;
+        top: 10%;
+        left: 5%;
+    }
+    .svgarrow {
+        width: 3.5rem;
+        height: 4rem;
+        top: 10%;
+        right:5%;
+    }
+   
+}
+
+@media (min-width: 576px) and (max-width: 767.9px) {
     .background {
         background-position-y: 3rem;
         background-position-x: -3rem;
@@ -616,24 +642,65 @@ hr {
         left: 5%;
     }
     .svgarrow {
-        width: 4.5rem;
+        width: 4rem;
         height: 4rem;
         top: 10%;
         right:5%;
     }
-   
+    .btn.btn-warning {
+        padding: 0.175rem .25rem;
+    }
 }
 
 @media (min-width: 768px) and (max-width: 991.9px) {
-    .container {
-        width: 90%;
-        height: 56rem;
-        margin: 1rem auto;
+    .background {
+        background-position-y: 3rem;
+        background-position-x: -3rem;
+        background-size: 120% 106vh;
     }
-    
-    .deal {
-        width: 41%;
+    .blue-container {
+        max-width: 35rem;
+        padding: 5px;
     }
-   
-    
+    .svgd{
+        width: 4rem;
+        height: 4rem;
+        top: 10%;
+        left: 5%;
+    }
+    .svgarrow {
+        width: 4rem;
+        height: 4rem;
+        top: 10%;
+        right:5%;
+    }
+    .btn.btn-warning {
+        padding: 0.175rem .25rem;
+    }
+}
+@media (min-width: 992px) and (max-width: 1199.9px) {
+    .background {
+        background-position-y: 3rem;
+        background-position-x: -3rem;
+        background-size: 120% 106vh;
+    }
+    .blue-container {
+        max-width: 40rem;
+        padding: 5px;
+    }
+    .svgd{
+        width: 4rem;
+        height: 4rem;
+        top: 10%;
+        left: 5%;
+    }
+    .svgarrow {
+        width: 4rem;
+        height: 4rem;
+        top: 10%;
+        right:5%;
+    }
+    .btn.btn-warning {
+        padding: 0.175rem .25rem;
+    }
 }
