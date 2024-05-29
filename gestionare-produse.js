@@ -204,7 +204,10 @@ const foodItems = [
         description: 'baked peppers, white onion, garlic, green parsley, polenta',
         imageUrl: 'https://savoriurbane.com/wp-content/uploads/2019/08/cum-se-face-reteta-de-mancare-de-ardei-copti.jpg'
     },
-   
+    {
+        id: '35',
+        name: 'Apa plata'
+    },
 
 ];
 
