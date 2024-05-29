@@ -259,9 +259,9 @@ function setupSubmitOrderButton() {
             var cart = JSON.parse(localStorage.getItem("cart")) || [];
             if (cart.length > 0) {
                 localStorage.setItem("order", JSON.stringify(cart));
-                alert("Comanda a fost trimisă!");
                 localStorage.removeItem("cart");
                 displayCart();
+                window.location.href = 'afterpay.html'; // Redirecționează către afterpay.html
             } else {
                 alert("Coșul este gol. Adăugați produse înainte de a trimite comanda.");
             }
