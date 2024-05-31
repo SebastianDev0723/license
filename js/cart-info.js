@@ -1,3 +1,4 @@
+//Contact cart.html
 function editContact() {
     document.getElementById('contact-info').style.display = 'none';
     document.getElementById('contact-form').style.display = 'block';
@@ -29,6 +30,7 @@ function editOrderType() {
     toggleDeliveryFields();
 }
 
+//Tip comandă cart.html
 function saveOrderType(event) {
     event.preventDefault();
 
