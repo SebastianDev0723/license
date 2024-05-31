@@ -19,6 +19,7 @@ function saveContact(event) {
     document.getElementById('contact-form').style.display = 'none';
 }
 
+//Tip comandă cart.html
 function editOrderType() {
     document.getElementById('order-type-info').style.display = 'none';
     document.getElementById('order-type-form').style.display = 'block';
@@ -30,7 +31,6 @@ function editOrderType() {
     toggleDeliveryFields();
 }
 
-//Tip comandă cart.html
 function saveOrderType(event) {
     event.preventDefault();
 
@@ -58,5 +58,5 @@ function toggleDeliveryFields() {
 }
 
 
-//
+
 
